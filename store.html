@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+
+  <body class="font-poppins">
     <!--header-->
     <header>
       <nav class="w-full text-black">
@@ -21,53 +34,53 @@
             />
           </a>
           <ul
-            class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 font-semibold"
+            class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 text-md"
           >
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./aboutUs.html"
                 >About</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./films.html"
                 >Films</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./images.html"
                 >Photos</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./travel.html"
                 >Travel</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./quote.html"
                 >Quote</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline"
+                class="animated-underline"
                 href="./store.html"
                 >Store</a
               >
@@ -95,53 +108,53 @@
             </button>
           </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden pl-8 text-2xl">
+        <div id="mobile-menu" class="hidden md:hidden pl-8 text-lg">
           <ul class="space-y-4 p-4">
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./aboutUs.html"
                 >About</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./films.html"
                 >Films</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./images.html"
                 >Photos</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./travel.html"
                 >Travel</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./quote.html"
                 >Quote</a
               >
             </li>
             <li>
               <a
-                class="hover:text-gray-700 hover:underline block"
+                class="animated-underline block"
                 href="./store.html"
                 >Store</a
               >
@@ -158,8 +171,8 @@
       <div
         class="text-center text-brown-500 flex flex-col items-center justify-center bg-stone-100/50 h-96 p-5"
       >
-        <h1 class="text-7xl font-bold mb-4">Store</h1>
-        <h2 class="text-6xl">Coming soon</h2>
+        <h1 class="text-7xl font-bold mb-4 font-poppins">Store</h1>
+        <h2 class="text-6xl font-poppins">Coming soon</h2>
       </div>
     </div>
   </body>
