@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Films</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function openModal(videoSrc, title, description) {
+        const modal = document.getElementById("video-modal");
+        const iframe = modal.querySelector("iframe");
+        const modalTitle = modal.querySelector("#modal-title");
+        const modalDescription = modal.querySelector("#modal-description");
+
+        iframe.src = videoSrc;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+
+        modal.classList.remove("hidden");
+        document.body.classList.add("no-scroll");
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("video-modal");
+        const iframe = modal.querySelector("iframe");
+
+        iframe.src = ""; // Stop the video
+        modal.classList.add("hidden");
+        document.body.classList.remove("no-scroll");
+      }
+    </script>
+    <style>
+      .modal-content {
+        max-height: 70vh;
+        overflow-y: auto;
+      }
+
+      .no-scroll {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!--header-->
+    <header>
+      <nav class="w-full text-black">
+        <div
+          class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between"
+        >
+          <a class="font-bold font-heading" href="#">
+            <img
+              class="h-12 md:h-8 lg:h-12"
+              src="./assets/name1.png"
+              alt="logo"
+            />
+          </a>
+          <ul
+            class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 font-semibold"
+          >
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./">Home</a>
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./films.html"
+                >Films</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./images.html"
+                >Photos</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./travel.html"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./quote.html"
+                >Quote</a
+              >
+            </li>
+
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./store.html"
+                >Store</a
+              >
+            </li>
+          </ul>
+          <div class="md:hidden">
+            <button
+              class="text-black focus:outline-none"
+              onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden pl-8 text-2xl">
+          <ul class="space-y-4 p-4">
+            <li>
+              <a class="hover:text-gray-700 hover:underline block" href="./"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./films.html"
+                >Films</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./images.html"
+                >Photos</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./travel.html"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./quote.html"
+                >Quote</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./store.html"
+                >Store</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Video Gallery Section -->
+    <div class="bg-white">
+      <div
+        id="section-2"
+        class="w-full h-full flex flex-col items-center px-5 py-5 relative"
+      >
+        <div
+          class="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-semibold"
+        >
+          <!-- Video Items -->
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Forever Starts Now: Pre-Wedding Moments', 'This is a short video capturing the beautiful moments of a pre-wedding shoot. The video highlights the love and connection between the couple in picturesque locations.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
+              src="./assets/desktop-wallpaper-indian-wedding-ceremony-hindu-marriage-thumbnail.jpg"
+              alt="Image 1"
+            />
+            Forever Starts Now: Pre-Wedding Moments
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
+              src="./assets/images.jpeg"
+              alt="Image 2"
+            />
+            Two Hearts, One Journey
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'The Road to Forever', 'Highlights from the pre-wedding shoot showcasing beautiful locations and heartfelt moments.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (1).jpg"
+              alt="Image 3"
+            />
+            The Road to Forever
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (2).jpg"
+              alt="Image 4"
+            />
+            From This Moment
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Eternal Love', 'A beautiful journey of love through a wedding video filled with romantic moments and joyful celebrations.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (3).jpg"
+              alt="Image 5"
+            />
+            Eternal Love
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (4).jpg"
+              alt="Image 6"
+            />
+            Cherished Moments
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'A Dream Come True', 'A dreamy wedding video that beautifully captures the essence of a couple’s special day with magical moments.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (5).jpg"
+              alt="Image 7"
+            />
+            A Dream Come True
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Unforgettable Day', 'An unforgettable wedding video that showcases the highlights and emotions of the day, creating lasting memories.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (6).jpg"
+              alt="Image 8"
+            />
+            Unforgettable Day
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (7).jpg"
+              alt="Image 8"
+            />
+            Two Hearts, One Journey
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault.jpg"
+              alt="Image 8"
+            />
+            From This Moment
+          </div>
+
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
+          >
+            <img
+              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              src="./assets/Thumbnail-Indian-Wedding-Traditions-scaled.jpg"
+              alt="Image 8"
+            />
+            Cherished Moments
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      id="video-modal"
+      class="fixed inset-0 bg-neutral-700 bg-opacity-75 flex items-center justify-center hidden z-50"
+    >
+      <div
+        class="bg-white w-full h-[80vh] max-w-6xl p-4 rounded-lg relative modal-content"
+      >
+        <button
+          onclick="closeModal()"
+          class="absolute right-5 text-white md:text-black text-xl"
+        >
+          &#10005;
+        </button>
+
+        <div class="flex flex-col md:flex-row h-full">
+          <div class="w-full h-full lg:w-2/3 bg-black overflow-hidden">
+            <iframe width="100%" height="100%" src="" allowfullscreen></iframe>
+          </div>
+          <div class="w-full lg:w-1/3 p-4 overflow-auto">
+            <h3 id="modal-title" class="text-xl font-bold mb-2">Video Title</h3>
+            <p id="modal-description" class="text-gray-700">
+              Video Description
+            </p>
+
+            <!-- Video Thumbnails -->
+            <!-- <div class="flex flex-col bg-white p-8 shadow-lg gap-6">
+              <div>
+                <h2 class="text-xl font-semibold mb-4">Video Thumbnails</h2>
+                <div class="flex space-x-4">
+                  <img
+                    src="/assets/mqdefault_6s (1).webp"
+                    alt="Thumbnail 1"
+                    class="w-44 rounded-lg"
+                  />
+                  <img
+                    src="/assets/mqdefault_6s (2).webp"
+                    alt="Thumbnail 2"
+                    class="w-44 rounded-lg"
+                  />
+                  <img
+                    src="/assets/mqdefault_6s (3).webp"
+                    alt="Thumbnail 3"
+                    class="w-44 rounded-lg"
+                  />
+                </div>
+              </div> -->
+
+            <div class="bg-white p-8 shadow-lg rounded-lg">
+              <h2 class="text-xl font-semibold mb-4 text-center underline">
+                Description
+              </h2>
+              <div class="space-y-6">
+                <article>
+                  <h4 class="text-lg font-semibold">Description Title 1</h4>
+                  <p class="mt-2 text-gray-700 text-sm">
+                    This is a brief summary of the first post. It provides an
+                    overview of the content and engages the reader with
+                    interesting information about the topic.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

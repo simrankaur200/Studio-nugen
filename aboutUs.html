@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us & Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans">
+    <!--header-->
+    <header>
+      <nav class="w-full text-black">
+        <div
+          class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between"
+        >
+          <a class="font-bold font-heading" href="#">
+            <img
+              class="h-12 md:h-8 lg:h-12"
+              src="./assets/name1.png"
+              alt="logo"
+            />
+          </a>
+          <ul
+            class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 font-semibold"
+          >
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./">Home</a>
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./films.html"
+                >Films</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./images.html"
+                >Photos</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline"
+                href="./travel.html"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./quote.html"
+                >Quote</a
+              >
+            </li>
+
+            <li>
+              <a class="hover:text-gray-700 hover:underline" href="./store.html"
+                >Store</a
+              >
+            </li>
+          </ul>
+          <div class="md:hidden">
+            <button
+              class="text-black focus:outline-none"
+              onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden pl-8 text-2xl">
+          <ul class="space-y-4 p-4">
+            <li>
+              <a class="hover:text-gray-700 hover:underline block" href="./"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./aboutUs.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./films.html"
+                >Films</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./images.html"
+                >Photos</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./travel.html"
+                >Travel</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./quote.html"
+                >Quote</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="hover:text-gray-700 hover:underline block"
+                href="./store.html"
+                >Store</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="py-16">
+      <div
+        class="flex flex-col lg:flex-row lg:gap-8 gap-4 lg:items-center justify-center px-4"
+      >
+        <div class="lg:w-1/2">
+          <img
+            class="shadow-lg transition-transform duration-300 hover:scale-105"
+            src="./assets/background.jpeg"
+            alt="Photographer portrait"
+          />
+        </div>
+        <div class="lg:w-1/2">
+          <h3
+            class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 underline text-center lg:text-start"
+          >
+            About Me
+          </h3>
+          <p class="text-base mb-4">
+            I’m a passionate photographer dedicated to capturing the world’s
+            most beautiful and authentic moments. From breathtaking landscapes
+            to intimate portraits, I bring a blend of technical skill and
+            artistic vision to every project.
+          </p>
+          <p class="text-base">
+            I’m committed to telling compelling stories through my lens,
+            infusing each photo with creativity and care. My goal is to deliver
+            stunning results and an exceptional experience. Let’s work together
+            to bring your vision to life!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-gray-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-20 text-center">
+          <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 underline">
+            Client List
+          </h2>
+          <p class="text-xl text-gray-900 text-center">
+            We work with the best client.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+          <a
+            href="#"
+            class="justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/images.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/logo11.jpeg" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/logo12.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/black_logo.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/logo12.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/black_logo.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/logo11.jpeg" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center border border-solid border-gray-200 shadow-sm h-24 rounded-2xl"
+          >
+            <img src="./assets/images.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- <section class="py-16 bg-gray-50">
+      <div class="text-center mb-12 px-4">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 underline">
+          Client List
+        </h2>
+
+        <p class="text-base sm:text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+          Discover some of my favorite moments captured through my lens. Each
+          image tells a unique story, reflecting my passion for photography.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4"
+      >
+        <div class="relative overflow-hidden rounded-lg group">
+          <img
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="./assets/image2 (1).jpeg"
+            alt="Photography highlight 1"
+          />
+          <div
+            class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg group">
+          <img
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="./assets/image2 (2).jpg"
+            alt="Photography highlight 2"
+          />
+          <div
+            class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg group">
+          <img
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="./assets/Image.jpg"
+            alt="Photography highlight 3"
+          />
+          <div
+            class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-lg group">
+          <img
+            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="./assets/images8.jpeg"
+            alt="Photography highlight 4"
+          />
+          <div
+            class="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+          </div>
+        </div>
+      </div> -->
+      <!-- Show More Button -->
+      <!-- <div class="flex justify-center mt-8">
+        <button
+          class="bg-gray-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors duration-300"
+        >
+          Show More
+        </button>
+      </div> -->
+    </section>
+  </body>
+</html>

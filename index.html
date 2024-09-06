@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="relative w-full h-screen">
+      <!--header-->
+      <header>
+        <nav class="fixed w-full text-white">
+          <div
+            class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between"
+          >
+            <a class="font-bold font-heading" href="#">
+              <img
+                class="h-12 md:h-8 lg:h-12"
+                src="./assets/name.png"
+                alt="logo"
+              />
+            </a>
+            <ul
+              class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 font-semibold"
+            >
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./
+                "
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./aboutUs.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./films.html"
+                  >Films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./images.html"
+                  >Photos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./quote.html"
+                  >Quote</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline"
+                  href="./store.html"
+                  >Store</a
+                >
+              </li>
+            </ul>
+            <div class="md:hidden">
+              <button
+                class="text-white focus:outline-none"
+                onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="mobile-menu" class="hidden md:hidden pl-8 text-xl">
+            <ul class="space-y-4 p-4">
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./aboutUs.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./films.html"
+                  >Films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./images.html"
+                  >Photos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./travel.html"
+                  >Travel</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./quote.html"
+                  >Quote</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-gray-200 hover:underline block"
+                  href="./store.html"
+                  >Store</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!--section--->
+      <section class="h-full w-full">
+        <img
+          class="hidden object-cover md:block w-full h-full"
+          src="./assets/About.jpeg"
+          alt="Background"
+        />
+        <img
+          class="md:hidden object-cover w-full h-full"
+          src="./assets/About.jpeg"
+          alt="Mobile Background"
+        />
+        <div
+          class="absolute z-10 top-[50%] right-[8%] md:right-[30%] md:top-[30%] px-4 md:px-0 font-heading"
+        >
+          <div
+            class="container text-white font-bold text-[10vw] md:text-[6vw] text-center md:text-start"
+          >
+            The Art of Photography
+          </div>
+          <div
+            class="container text-white text-[3vw] md:text-[2vw] pl-1 lg:pl-3 text-center md:text-start"
+          >
+            --- Capturing Moments, Creating Memories ---
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
