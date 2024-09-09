@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Films</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       function openModal(videoSrc, title, description) {
@@ -53,7 +53,9 @@
     </script>
   </head>
 
-  <body class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
+  <body
+    class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300"
+  >
     <!--header-->
     <header>
       <nav class="w-full text-black">
@@ -71,48 +73,26 @@
             class="hidden md:flex space-x-12 md:space-x-6 lg:space-x-12 text-md"
           >
             <li>
-              <a
-                class="animated-underline"
-                href="./"
-                >Home</a
-              >
+              <a class="animated-underline" href="./">Home</a>
             </li>
             <li>
-              <a
-                class="animated-underline"
-                href="./aboutUs.html"
-                >About</a
-              >
+              <a class="animated-underline" href="./aboutUs.html">About</a>
             </li>
             <li>
-              <a class="animated-underline" href="./films.html"
-                >Films</a
-              >
+              <a class="animated-underline" href="./films.html">Films</a>
             </li>
             <li>
-              <a
-                class="animated-underline"
-                href="./images.html"
-                >Photos</a
-              >
+              <a class="animated-underline" href="./images.html">Photos</a>
             </li>
             <li>
-              <a
-                class="animated-underline"
-                href="./travel.html"
-                >Travel</a
-              >
+              <a class="animated-underline" href="./travel.html">Travel</a>
             </li>
             <li>
-              <a class="animated-underline" href="./quote.html"
-                >Quote</a
-              >
+              <a class="animated-underline" href="./quote.html">Quote</a>
             </li>
 
             <li>
-              <a class="animated-underline" href="./store.html"
-                >Store</a
-              >
+              <a class="animated-underline" href="./store.html">Store</a>
             </li>
           </ul>
           <div class="md:hidden">
@@ -140,83 +120,63 @@
         <div id="mobile-menu" class="hidden md:hidden pl-8 text-lg">
           <ul class="space-y-4 p-4">
             <li>
-              <a class="animated-underline block" href="./"
-                >Home</a
-              >
+              <a class="animated-underline block" href="./">Home</a>
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./aboutUs.html"
+              <a class="animated-underline block" href="./aboutUs.html"
                 >About</a
               >
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./films.html"
-                >Films</a
-              >
+              <a class="animated-underline block" href="./films.html">Films</a>
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./images.html"
+              <a class="animated-underline block" href="./images.html"
                 >Photos</a
               >
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./travel.html"
+              <a class="animated-underline block" href="./travel.html"
                 >Travel</a
               >
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./quote.html"
-                >Quote</a
-              >
+              <a class="animated-underline block" href="./quote.html">Quote</a>
             </li>
             <li>
-              <a
-                class="animated-underline block"
-                href="./store.html"
-                >Store</a
-              >
+              <a class="animated-underline block" href="./store.html">Store</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <!-- Video Gallery Section -->
-    <div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
+    <div class="bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 pt-20">
       <div
         id="section-2"
         class="w-full h-full flex flex-col items-center px-5 py-5 relative"
       >
         <div
-          class="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-semibold"
+          class="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
         >
           <!-- Video Items -->
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Forever Starts Now: Pre-Wedding Moments', 'This is a short video capturing the beautiful moments of a pre-wedding shoot. The video highlights the love and connection between the couple in picturesque locations.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
+              class="shadow-md shadow-gray-500 mb-2 w-full"
               src="./assets/desktop-wallpaper-indian-wedding-ceremony-hindu-marriage-thumbnail.jpg"
               alt="Image 1"
             />
             Forever Starts Now: Pre-Wedding Moments
           </div>
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
+              class="shadow-md shadow-gray-500 mb-2 w-full"
               src="./assets/images.jpeg"
               alt="Image 2"
             />
@@ -224,11 +184,11 @@
           </div>
 
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'The Road to Forever', 'Highlights from the pre-wedding shoot showcasing beautiful locations and heartfelt moments.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (1).jpg"
               alt="Image 3"
             />
@@ -236,22 +196,22 @@
           </div>
 
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (2).jpg"
               alt="Image 4"
             />
             From This Moment
           </div>
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Eternal Love', 'A beautiful journey of love through a wedding video filled with romantic moments and joyful celebrations.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (3).jpg"
               alt="Image 5"
             />
@@ -259,11 +219,11 @@
           </div>
 
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (4).jpg"
               alt="Image 6"
             />
@@ -271,11 +231,11 @@
           </div>
 
           <div
-            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'A Dream Come True', 'A dreamy wedding video that beautifully captures the essence of a couple’s special day with magical moments.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (5).jpg"
               alt="Image 7"
             />
@@ -287,7 +247,7 @@
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Unforgettable Day', 'An unforgettable wedding video that showcases the highlights and emotions of the day, creating lasting memories.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (6).jpg"
               alt="Image 8"
             />
@@ -298,7 +258,7 @@
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault (7).jpg"
               alt="Image 8"
             />
@@ -309,7 +269,7 @@
             onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/maxresdefault.jpg"
               alt="Image 8"
             />
@@ -321,7 +281,7 @@
             onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
           >
             <img
-              class="rounded-lg shadow-md shadow-gray-500 mb-2"
+              class="shadow-md shadow-gray-500 mb-2"
               src="./assets/Thumbnail-Indian-Wedding-Traditions-scaled.jpg"
               alt="Image 8"
             />
@@ -337,7 +297,7 @@
       class="fixed inset-0 bg-neutral-700 bg-opacity-75 flex items-center justify-center hidden z-50"
     >
       <div
-        class="bg-white w-full h-[80vh] max-w-6xl p-4 rounded-lg relative modal-content"
+        class="bg-white w-full h-[80vh] max-w-6xl p-4 relative modal-content"
       >
         <button
           onclick="closeModal()"
@@ -393,6 +353,41 @@
                   </p>
                 </article>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white text-xl pt-10 font-semibold text-center underline">
+          Behind The Scenes
+          <div
+            class="grid pt-10 gap-6 grid-cols-1 sm:grid-cols-1 p-8 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <div class=" cursor-pointer transition-transform duration-500 hover:scale-105">
+              <img
+                src="/assets/image2 (1).jpeg"
+                alt="image"
+                class="shadow-md shadow-gray-500 mb-2"
+              />
+            </div>
+            <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+              <img
+                src="/assets/image2 (1).jpeg"
+                alt="image"
+                class="shadow-md shadow-gray-500 mb-2"
+              />
+            </div>
+            <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+              <img
+                src="/assets/image123.jpg"
+                alt="image"
+                class="shadow-md shadow-gray-500 mb-2"
+              />
+            </div>
+            <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+              <img
+                src="/assets/image123.jpg"
+                alt="image"
+                class="shadow-md shadow-gray-500 mb-2"
+              />
             </div>
           </div>
         </div>
