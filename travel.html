@@ -127,159 +127,157 @@
       </nav>
     </header>
 
-    <div></div>
-    <div class="flex justify-center items-center gap-10 ml-24 mt-6">
+    <div class="flex gap-2 ml-24 mt-6 items-center">
       <button
         id="imagesButton"
         onclick="showImages(); changeColor(this);"
-        class="inline-flex imageButton gap-2 items-center justify-center shadow-lg hover:shadow-gray-500/50 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-500 text-white text-primary-foreground px-4 py-2"
+        class="imageButton text-md animated-underline"
       >
         Photos
       </button>
+      <span>/</span>
       <button
         id="videosButton"
         onclick="showVideos(); changeColor(this);"
-        class="inline-flex videoButton gap-2 items-center justify-center shadow-lg hover:shadow-gray-500/50 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-500 text-white text-primary-foreground px-4 py-2"
+        class="videoButton text-md animated-underline"
       >
         Films
       </button>
-    </div>
+    </div>   
 
     <div id="imagesContainer" class="pt-10">
-      <!-- <h2 class="text-4xl font-semibold text-black mb-8 underline text-center">
-        Images
-      </h2> -->
       <div
         id="section-2"
-        class="w-full flex justify-center items-center px-5 py-5"
+        class="w-full flex justify-center items-center px-5 "
       >
         <div
           class="grid gap-16 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
         >
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-64 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/hot-beautiful-woman-colorful-sunhat-dress-walking-near-beach-ocean-hot-summer-day-near-palm_158538-13728.jpg?t=st=1724327891~exp=1724331491~hmac=ea00bc23f5209f78f4eeae591a1ddbb929f9872c118f3d73a27ce6b494f3e2ba&w=360"
+            class="w-full border-2 shadow-md shadow-gray-500 h-64 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/8.jpg"
             alt="Image 8"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-36 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/positive-man-with-upped-hands-near-embracing-women-car-beach_23-2148039074.jpg?t=st=1724327922~exp=1724331522~hmac=ef4323c013762d4dd93995c9928941d83965f6bc9c77a68e9432c676c400fb33&w=740"
+            class="w-full border-2 shadow-md shadow-gray-500 h-60 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="https://img.freepik.com/free-photo/man-beige-jacket-shorts-streetwear-full-body_53876-125232.jpg"
+            alt="Image 10"
+          />
+
+          <img
+            class="w-full border-2 shadow-md shadow-gray-500 h-56 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="https://img.freepik.com/free-photo/fashion-stylish-model-dressed-elegant-light-pink-suit-posing-near-white-wall_158538-13412.jpg?t=st=1724321727~exp=1724325327~hmac=1d97c457c9ecac9d835958fbe2cdf9414174592786934140787568fd08684a90&w=740"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-56 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/tourist-young-couple-standing-street-looking-map_23-2147841532.jpg?t=st=1724327869~exp=1724331469~hmac=09dbc7ed62d03ea8a7af12f796d0826452899cf625d677ebeb1a2f2794dedbce&w=740"
-            alt="Image 10"
-          />
-          <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-52 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-52 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/serious-handsome-young-man-sitting-isolated_171337-10544.jpg?t=st=1724321739~exp=1724325339~hmac=c1442bd8a5c714cd01b4fe192c2bf80c77ab391aa8775136e0d35132c51f3249&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-64 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-64 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/handsome-confident-young-curly-haired-man-drinking-coffee-standing-infront-isolated-white-wall_231208-1086.jpg?t=st=1724321812~exp=1724325412~hmac=0ecffdba55fb7a07d7bf03b5c0cdab6ae4b9108e9061ab39b38daaa2921383d0&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-68 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-68 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/vertical-shot-train-stop-with-grey-metallic-train-leaving_181624-5258.jpg?t=st=1724322121~exp=1724325721~hmac=05e4e339459bed4b43cc9f6388b16ec93c3be826d6c8e588aa808f9082b8b993&w=360"
             alt="Image 10"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-64 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/male-female-tourists-standing-look-roadside-map_1150-24573.jpg"
+            class="w-full border-2 shadow-md shadow-gray-500 h-64 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/1.jpg"
             alt="Image 1"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-88 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/adult-traveler-taking-pictures-outdoor_23-2148315707.jpg?t=st=1724327740~exp=1724331340~hmac=b1f65e5043cf5dc18bccac3b78426532496683eddf219e8eca54202779c3efba&w=740"
+            class="w-full border-2 shadow-md shadow-gray-500 h-88 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="https://img.freepik.com/free-photo/summer-green-water-sunlight-spring-beauty_1417-1246.jpg?t=st=1724321868~exp=1724325468~hmac=53479e3b0f6ebe0d59c55e2ccd16758e87f3785598c43b812768bfc4e5021113&w=740"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-76 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/woman-walking-road-glen-etive-scotland_53876-96602.jpg?t=st=1724327772~exp=1724331372~hmac=fd3088bef143e7359978e3400e0d50cc047c2bda009c007523c417f03c39a751&w=740"
+            class="w-full border-2 shadow-md shadow-gray-500 h-76 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/3.jpg"
             alt="Image 3"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-44 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/person-taking-photograph-road-trees_410324-137.jpg?t=st=1724327796~exp=1724331396~hmac=33a743236fb54fee4cc70db58dbe5cf3071c5caed05271d8b77bebbaf6775648&w=360"
+            class="w-full border-2 shadow-md shadow-gray-500 h-44 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/4.jpg"
             alt="Image 4"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-32 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/woman-standing-sandy-beach-by-ocean_23-2148134673.jpg?t=st=1724327848~exp=1724331448~hmac=e0d8e29978041bb97a198f195b31ac8df07bfd918006f7d9aafce7e589d4b834&w=360"
+            class="w-full border-2 shadow-md shadow-gray-500 h-32 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/5.jpg"
             alt="Image 5"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-84 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
-            src="https://img.freepik.com/free-photo/woman-holiday-journey-travel-relaxation_53876-15970.jpg?t=st=1724327875~exp=1724331475~hmac=0071fc572f2695a2f0e32eb5ff6698304dbf83955845c342e00f7a81d8cc643d&w=740"
+            class="w-full border-2 shadow-md shadow-gray-500 h-84 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
+            src="./assets/6.jpg"
             alt="Image 6"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-56 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-56 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/beautiful-view-mesmerizing-nature-traditional-styled-japanese-adelaide-himeji-gardens_181624-46195.jpg?t=st=1724321403~exp=1724325003~hmac=96ef853b6c1e21db9b04af8ce703a9dfaee30baccf8a90d5a2ac45807c742821&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-48 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-48 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/mesmerizing-scenery-green-mountains-with-cloudy-sky-surface_181624-27189.jpg?t=st=1724321944~exp=1724325544~hmac=754ca8513a88d52a50210e7e9eeeb2f7529b186ae49a49d3843c80db4bf99ab5&w=740"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-64 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-64 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/vertical-selective-closeup-shot-blue-bicycle-with-basket-bird-cage_181624-3271.jpg?t=st=1724322269~exp=1724325869~hmac=e949ef2077c37af96b14d12065f5056559be8c20c85d8b9e809e5d99d60e9ecf&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-72 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-72 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="./assets/7.jpg"
             alt="Image 7"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-76 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-76 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/portrait-stylish-senior-man-sitting-outdoors_23-2149038050.jpg?t=st=1724322326~exp=1724325926~hmac=c1752f9dc84eb8313f93d69faf3b1848edabd614bb0d199d77bb7f018c90abce&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-68 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-68 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/elderly-woman_23-2148138605.jpg?t=st=1724322363~exp=1724325963~hmac=5b09434566ec8c486047e3937b985697e7daf0c6602efe9652a32ffe155f90cb&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-80 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-80 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/small-boy-with-car-sitting-bed_8353-382.jpg?t=st=1724322183~exp=1724325783~hmac=5dca45775f51a6e8a3f71fd0d0fb877dbacbd418370fecf8861889abe00f6653&w=360"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-42 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-42 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/cute-baby-playing-with-toy-while-sitting-floor_23-2149355581.jpg?t=st=1724322162~exp=1724325762~hmac=35d2af318202538b174703bce42559ed6e674a478f33e35ab2b76ac8cd0c4589&w=360"
             alt="Image 10"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-56 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-56 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/train-railway-station_1161-203.jpg?t=st=1724322090~exp=1724325690~hmac=d5d7e53b6bda86dac72d16211d00714d4e9ac12fa1bb6e69307eb860a75f7f9c&w=740"
             alt="Image 10"
           />
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-72 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-72 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/portrait-successful-senior-farmer-agronomist-standing-wheat-field_342744-1250.jpg?t=st=1724323032~exp=1724326632~hmac=6b5566b99a4a5bb9669fdddef1e1dfd64087f57905f40fec1092f12c25d02fff&w=740"
             alt="Image 10"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-48 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-48 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/foggy-mountainous-scenery-gloomy-sky_181624-19912.jpg?t=st=1724321295~exp=1724324895~hmac=f6761ca8204ae4ad4c90d145bb301e976de9ab5b49b983d612e3c9adcd65576f&w=740"
             alt="Image 10"
           />
 
           <img
-            class="w-full border-2 shadow-lg shadow-gray-500 h-68 cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
+            class="w-full border-2 shadow-md shadow-gray-500 h-68 cursor-pointer transition-transform duration-500 hover:scale-105 object-cover"
             src="https://img.freepik.com/free-photo/father-spending-time-with-his-daughter-outdoors-father-s-day_23-2150167779.jpg?t=st=1724322964~exp=1724326564~hmac=9b795060cc954d0c056848bd888d034f95ab0cf0fe548f17d0721770fe0b08e5&w=360"
             alt="Image 10"
           />
@@ -288,265 +286,284 @@
     </div>
 
     <div id="videosContainer" class="pt-10">
-        <div
-          class="w-full h-full flex flex-col items-center px-5 py-5 relative"
+      <div
+      class="w-full h-full flex flex-col items-center px-5  relative"
         >
-          <!-- <h2
-            class="text-4xl font-semibold text-black mb-8 underline text-center"
+        <div
+          class="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <!-- Video Items -->
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Forever Starts Now: Pre-Wedding Moments', 'This is a short video capturing the beautiful moments of a pre-wedding shoot. The video highlights the love and connection between the couple in picturesque locations.')"
           >
-            Videos
-          </h2> -->
+            <img
+              class="shadow-md shadow-gray-500 mb-2 w-full"
+              src="./assets/desktop-wallpaper-indian-wedding-ceremony-hindu-marriage-thumbnail.jpg"
+              alt="Image 1"
+            />
+            Forever Starts Now: Pre-Wedding Moments
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2 w-full"
+              src="./assets/images.jpeg"
+              alt="Image 2"
+            />
+            Two Hearts, One Journey
+          </div>
 
           <div
-            class="grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 font-semibold"
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'The Road to Forever', 'Highlights from the pre-wedding shoot showcasing beautiful locations and heartfelt moments.')"
           >
-            <!-- Video Items -->
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Forever Starts Now: Pre-Wedding Moments', 'This is a short video capturing the beautiful moments of a pre-wedding shoot. The video highlights the love and connection between the couple in picturesque locations.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
-                src="./assets/desktop-wallpaper-indian-wedding-ceremony-hindu-marriage-thumbnail.jpg"
-                alt="Image 1"
-              />
-              Forever Starts Now: Pre-Wedding Moments
-            </div>
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2 w-full"
-                src="./assets/images.jpeg"
-                alt="Image 2"
-              />
-              Two Hearts, One Journey
-            </div>
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (1).jpg"
+              alt="Image 3"
+            />
+            The Road to Forever
+          </div>
 
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'The Road to Forever', 'Highlights from the pre-wedding shoot showcasing beautiful locations and heartfelt moments.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (1).jpg"
-                alt="Image 3"
-              />
-              The Road to Forever
-            </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (2).jpg"
+              alt="Image 4"
+            />
+            From This Moment
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Eternal Love', 'A beautiful journey of love through a wedding video filled with romantic moments and joyful celebrations.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (3).jpg"
+              alt="Image 5"
+            />
+            Eternal Love
+          </div>
 
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (2).jpg"
-                alt="Image 4"
-              />
-              From This Moment
-            </div>
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Eternal Love', 'A beautiful journey of love through a wedding video filled with romantic moments and joyful celebrations.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (3).jpg"
-                alt="Image 5"
-              />
-              Eternal Love
-            </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (4).jpg"
+              alt="Image 6"
+            />
+            Cherished Moments
+          </div>
 
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (4).jpg"
-                alt="Image 6"
-              />
-              Cherished Moments
-            </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform pt-3 duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'A Dream Come True', 'A dreamy wedding video that beautifully captures the essence of a couple’s special day with magical moments.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (5).jpg"
+              alt="Image 7"
+            />
+            A Dream Come True
+          </div>
 
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'A Dream Come True', 'A dreamy wedding video that beautifully captures the essence of a couple’s special day with magical moments.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (5).jpg"
-                alt="Image 7"
-              />
-              A Dream Come True
-            </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Unforgettable Day', 'An unforgettable wedding video that showcases the highlights and emotions of the day, creating lasting memories.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (6).jpg"
+              alt="Image 8"
+            />
+            Unforgettable Day
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault (7).jpg"
+              alt="Image 8"
+            />
+            Two Hearts, One Journey
+          </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/maxresdefault.jpg"
+              alt="Image 8"
+            />
+            From This Moment
+          </div>
 
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Unforgettable Day', 'An unforgettable wedding video that showcases the highlights and emotions of the day, creating lasting memories.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (6).jpg"
-                alt="Image 8"
-              />
-              Unforgettable Day
-            </div>
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Two Hearts, One Journey', 'This video captures the essence of a couple’s wedding story with emotional highlights and memorable moments.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault (7).jpg"
-                alt="Image 8"
-              />
-              Two Hearts, One Journey
-            </div>
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/yettgbNymZ7vqY', 'From This Moment', 'A collection of highlights from the wedding day capturing the most special moments of the couple.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/maxresdefault.jpg"
-                alt="Image 8"
-              />
-              From This Moment
-            </div>
-
-            <div
-              class="w-[100%] cursor-pointer transition-transform duration-300 hover:scale-105 object-contain text-center"
-              onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
-            >
-              <img
-                class="rounded-lg shadow-md shadow-gray-500 mb-2"
-                src="./assets/Thumbnail-Indian-Wedding-Traditions-scaled.jpg"
-                alt="Image 8"
-              />
-              Cherished Moments
-            </div>
+          <div
+            class="w-[100%] cursor-pointer transition-transform duration-500 hover:scale-105 object-contain text-center"
+            onclick="openModal('https://www.youtube.com/embed/tgbNymZ7vqY', 'Cherished Moments', 'This video highlights the cherished moments of a wedding, capturing every emotion and detail.')"
+          >
+            <img
+              class="shadow-md shadow-gray-500 mb-2"
+              src="./assets/Thumbnail-Indian-Wedding-Traditions-scaled.jpg"
+              alt="Image 8"
+            />
+            Cherished Moments
           </div>
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div
-      id="video-modal"
-      class="fixed inset-0 bg-neutral-700 bg-opacity-75 flex items-center justify-center hidden z-50"
+  </div>
+  <!-- Modal -->
+  <div
+  id="video-modal"
+  class="fixed inset-0 bg-neutral-700 bg-opacity-75 flex items-center justify-center hidden z-50"
+>
+  <div
+    class="bg-white w-full h-[80vh] max-w-6xl p-4 relative modal-content"
+  >
+    <button
+      onclick="closeModal()"
+      class="absolute right-5 text-white md:text-black text-xl"
     >
-      <div
-        class="bg-white w-full h-[80vh] max-w-6xl p-4 rounded-lg relative modal-content"
-      >
-        <!-- <button
-          onclick="closeModal()"
-          class="absolute top-1 right-9 text-white bg-red-600 rounded-[100%] w-5"
-        >
-          X
-        </button> -->
+      &#10005;
+    </button>
 
-        <button
-          onclick="closeModal()"
-          class="absolute right-5 text-white md:text-black text-xl"
-        >
-          &#10005;
-        </button>
+    <div class="flex flex-col md:flex-row h-full">
+      <div class="w-full h-full lg:w-2/3 bg-black overflow-hidden">
+        <iframe width="100%" height="100%" src="" allowfullscreen></iframe>
+      </div>
+      <div class="w-full lg:w-1/3 p-4 overflow-auto">
+        <h3 id="modal-title" class="text-xl font-bold mb-2">Video Title</h3>
+        <p id="modal-description" class="text-gray-700">
+          Video Description
+        </p>
 
-        <div class="flex flex-col md:flex-row h-full">
-          <div class="w-full h-full lg:w-2/3 bg-black overflow-hidden">
-            <iframe width="100%" height="100%" src="" allowfullscreen></iframe>
-          </div>
-          <div class="w-full lg:w-1/3 p-4 overflow-auto">
-            <h3 id="modal-title" class="text-xl font-bold mb-2">Video Title</h3>
-            <p id="modal-description" class="text-gray-700">
-              Video Description
-            </p>
-
-            <!-- Video Thumbnails -->
-            <!-- <div class="flex flex-col bg-white p-8 shadow-lg gap-6">
-              <div>
-                <h2 class="text-xl font-semibold mb-4">Video Thumbnails</h2>
-                <div class="flex space-x-4">
-                  <img
-                    src="/assets/mqdefault_6s (1).webp"
-                    alt="Thumbnail 1"
-                    class="w-44 rounded-lg"
-                  />
-                  <img
-                    src="/assets/mqdefault_6s (2).webp"
-                    alt="Thumbnail 2"
-                    class="w-44 rounded-lg"
-                  />
-                  <img
-                    src="/assets/mqdefault_6s (3).webp"
-                    alt="Thumbnail 3"
-                    class="w-44 rounded-lg"
-                  />
-                </div>
-              </div> -->
-
-            <div class="bg-white p-8 shadow-lg rounded-lg">
-              <h2 class="text-xl font-semibold mb-4 text-center underline">
-                Description
-              </h2>
-              <div class="space-y-6">
-                <article>
-                  <h4 class="text-lg font-semibold">Description Title 1</h4>
-                  <p class="mt-2 text-gray-700 text-sm">
-                    This is a brief summary of the first post. It provides an
-                    overview of the content and engages the reader with
-                    interesting information about the topic.
-                  </p>
-                </article>
-              </div>
+        <!-- Video Thumbnails -->
+        <!-- <div class="flex flex-col bg-white p-8 shadow-lg gap-6">
+          <div>
+            <h2 class="text-xl font-semibold mb-4">Video Thumbnails</h2>
+            <div class="flex space-x-4">
+              <img
+                src="/assets/mqdefault_6s (1).webp"
+                alt="Thumbnail 1"
+                class="w-44 rounded-lg"
+              />
+              <img
+                src="/assets/mqdefault_6s (2).webp"
+                alt="Thumbnail 2"
+                class="w-44 rounded-lg"
+              />
+              <img
+                src="/assets/mqdefault_6s (3).webp"
+                alt="Thumbnail 3"
+                class="w-44 rounded-lg"
+              />
             </div>
+          </div> -->
+
+        <div class="bg-white p-8 shadow-lg rounded-lg">
+          <h2 class="text-xl font-semibold mb-4 text-center underline">
+            Description
+          </h2>
+          <div class="space-y-6">
+            <article>
+              <h4 class="text-lg font-semibold">Description Title 1</h4>
+              <p class="mt-2 text-gray-700 text-sm">
+                This is a brief summary of the first post. It provides an
+                overview of the content and engages the reader with
+                interesting information about the topic.
+              </p>
+            </article>
           </div>
         </div>
       </div>
     </div>
+    <div class="bg-white text-xl pt-10 font-semibold text-center underline">
+      Behind The Scenes
+      <div
+        class="grid pt-10 gap-6 grid-cols-1 sm:grid-cols-1 p-8 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class=" cursor-pointer transition-transform duration-500 hover:scale-105">
+          <img
+            src="/assets/image2 (1).jpeg"
+            alt="image"
+            class="shadow-md shadow-gray-500 mb-2"
+          />
+        </div>
+        <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+          <img
+            src="/assets/image2 (1).jpeg"
+            alt="image"
+            class="shadow-md shadow-gray-500 mb-2"
+          />
+        </div>
+        <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+          <img
+            src="/assets/image123.jpg"
+            alt="image"
+            class="shadow-md shadow-gray-500 mb-2"
+          />
+        </div>
+        <div class="cursor-pointer transition-transform duration-500 hover:scale-105">
+          <img
+            src="/assets/image123.jpg"
+            alt="image"
+            class="shadow-md shadow-gray-500 mb-2"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
     <div
       id="imageModal"
       class="fixed inset-0 flex items-center justify-center bg-neutral-700 bg-opacity-85 hidden"
     >
       <button
         id="prevImage"
-        class="absolute left-5 top-1/2 transform -translate-y-1/2 text-black text-3xl"
+        class="absolute left-5 top-1/2 transform -translate-y-1/2 text-white text-3xl"
       >
         &#10094;
       </button>
       <img
         id="modalImage"
-        class="rounded-lg max-w-[80%] max-h-[80%] object-contain"
+        class=" max-w-[80%] max-h-[80%] object-contain"
       />
       <button
         id="nextImage"
-        class="absolute right-5 top-1/2 transform -translate-y-1/2 text-black text-3xl"
+        class="absolute right-5 top-1/2 transform -translate-y-1/2 text-white text-3xl"
       >
         &#10095;
       </button>
       <button
         id="closeModal"
-        class="absolute top-5 right-5 text-black text-3xl"
+        class="absolute top-5 right-5 text-white text-3xl"
       >
         &#10005;
       </button>
-    </div>
 
     <script>
-      function changeColor(button) {
-        // Reset all buttons with the class 'imageButton' and 'videoButton' to default styles
+    function changeColor(button) {
         document
           .querySelectorAll(".imageButton, .videoButton")
           .forEach(function (btn) {
-            btn.style.backgroundColor = "gray";
-            btn.style.color = "white";
+            btn.style.textDecoration = "none";
           });
-
-        // Apply selected style to the clicked button
-        button.style.backgroundColor = "black";
-        button.style.color = "white";
+        button.style.textDecoration = "underline";
       }
 
       function showImages() {
