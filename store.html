@@ -144,25 +144,41 @@
       </nav>
     </header>
 
-    <div class="bg-cover bg-center flex flex-col">
-      <div class="bg-black/30"></div>
-      <div
-        class="text-center text-brown-500 flex flex-col items-center justify-center h-96 p-5"
-      >
-        <h1 class="text-6xl mb-4 font-poppins">Store</h1>
-        <h2 class="text-4xl font-poppins">Coming soon</h2>
-        <h2 class="font-poppins mt-6 mb-2">Latest Update</h2>
-
-        <input
-          type="text"
-          id="email"
-          name="email"
-          class="p-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300"
-          placeholder=" Email"
-        />
-        <button class="text-black animated-underline rounded mt-2">
-          Submit
-        </button>
+    <!-- Hero Section -->
+    <div
+      class="relative bg-hero-pattern bg-cover bg-center h-screen flex flex-col justify-center items-center text-center"
+    >
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 text-white">
+        <h1 class="text-6xl lg:text-8xl  mb-4 animate-bounce">
+          Store
+        </h1>
+        <h2 class="text-3xl lg:text-4xl font-light">Coming Soon</h2>
+        <p class="text-xl mt-4">Be the first to know when we launch!</p>
+        <div class="mt-8">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="p-4 border border-gray-300 rounded-lg w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-brandBlue transition duration-300"
+            placeholder="Enter your email"
+          />
+          <button
+            class="bg-black text-white py-3 px-6 rounded-lg mt-4 flex items-center space-x-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="w-6 h-6"
+            >
+              <path
+                d="M12 2C7.589 2 4 5.589 4 10v5.586l-1.707 1.707A1 1 0 0 0 3 19h18a1 1 0 0 0 .707-1.707L20 15.586V10c0-4.411-3.589-8-8-8zm8 15H4v-1.414l1.707-1.707A1 1 0 0 0 6 14V10c0-3.309 2.691-6 6-6s6 2.691 6 6v4a1 1 0 0 0 .293.707L20 15.586V17zm-8 4a3.002 3.002 0 0 0 2.816-2H9.184A3.002 3.002 0 0 0 12 21z"
+              />
+            </svg>
+            <span>Notify Me</span>
+          </button>
+        </div>
       </div>
     </div>
   </body>
