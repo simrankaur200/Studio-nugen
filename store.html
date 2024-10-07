@@ -1,183 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Store</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+  <style>
+    .underline-active {
+      text-decoration: underline;
+    }
 
-  <body
-    class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200 to-gray-200"
-  >
-    <!--header-->
-    <header>
-      <nav class="w-full text-black">
-        <div
-          class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between"
-        >
-          <a
-            class="font-bold text-md h-12 md:h-8 lg:h-12 flex items-center"
-            href="#"
-          >
-            Parth Munish Kakkar
-          </a>
-          <ul
-            class="hidden md:flex space-x-3 md:space-x-3 lg:space-x-5 text-md"
-          >
-            <li>
-              <a class="animated-underline" href="./">Home</a>
-            </li>
-            <li>
-              <a class="animated-underline" href="./aboutUs.html">About</a>
-            </li>
-            <li>
-              <a class="animated-underline" href="./films.html">Films</a>
-            </li>
-            <li>
-              <a class="animated-underline" href="./images.html">Photos</a>
-            </li>
-            <li>
-              <a class="animated-underline" href="./travel.html">Travel</a>
-            </li>
-            <li>
-              <a class="animated-underline" href="./quote.html">Quote</a>
-            </li>
+    /* Fade animation */
+    .fade {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
 
-            <li>
-              <a class="animated-underline" href="./store.html">Store</a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill="#0d0d0d"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="md:hidden">
-            <button
-              class="text-black focus:outline-none"
-              onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
-            >
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200 to-gray-200 fade">
+  <!-- Header -->
+  <header>
+    <nav class="w-full text-black">
+      <div class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between">
+        <a class="font-bold text-md h-12 md:h-8 lg:h-12 flex items-center" href="#">
+          Parth Munish Kakkar
+        </a>
+        <ul class="hidden md:flex space-x-3 md:space-x-3 lg:space-x-5 text-md">
+          <li><a class="animated-underline" href="./">Home</a></li>
+          <li><a class="animated-underline" href="./aboutUs.html">About</a></li>
+          <!-- Dropdown menu -->
+          <li class="relative">
+            <a class="animated-underline" href="#" id="work-menu">Work</a>
+            <ul id="work-dropdown"
+              class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg">
+              <li>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html" id="films-link">Films</a>
+              </li>
+              <li>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
+                  id="photos-link">Photos</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="animated-underline" href="./blog.html">Blog</a></li>
+          <li><a class="animated-underline" href="./quote.html">Quote</a></li>
+          <li><a class="animated-underline" href="./store.html">Store</a></li>
+          <li>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
+                <path fill="#0d0d0d"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
               </svg>
-            </button>
-          </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden text-lg">
-          <ul class="space-y-2 p-4 flex flex-col items-center">
-            <li>
-              <a class="animated-underline block" href="./">Home</a>
-            </li>
-            <li>
-              <a class="animated-underline block" href="./aboutUs.html"
-                >About</a
-              >
-            </li>
-            <li>
-              <a class="animated-underline block" href="./films.html">Films</a>
-            </li>
-            <li>
-              <a class="animated-underline block" href="./images.html"
-                >Photos</a
-              >
-            </li>
-            <li>
-              <a class="animated-underline block" href="./travel.html"
-                >Travel</a
-              >
-            </li>
-            <li>
-              <a class="animated-underline block" href="./quote.html">Quote</a>
-            </li>
-            <li>
-              <a class="animated-underline block" href="./store.html">Store</a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  class="w-5 h-5"
-                >
-                  <path
-                    fill="#0d0d0d"
-                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <div
-      class="relative h-screen flex flex-col justify-center items-center text-center"
-    >
-      <div class="absolute inset-0 b"></div>
-      <div class="relative z-10 text-black">
-        <h1 class="text-6xl lg:text-8xl mb-4 animate-bounce">Store</h1>
-        <h2 class="text-3xl lg:text-4xl font-light">Coming Soon</h2>
-        <p class="text-xl mt-4">Be the first to know when we launch!</p>
-        <div class="mt-8">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="p-4 border border-gray-300 rounded-lg w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-brandBlue transition duration-300"
-            placeholder="Enter your email"
-          />
-          <button
-            class="bg-black text-white py-3 px-6 rounded-lg mt-4 flex items-center space-x-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="white"
-              class="w-6 h-6"
-            >
-              <path
-                d="M12 2C7.589 2 4 5.589 4 10v5.586l-1.707 1.707A1 1 0 0 0 3 19h18a1 1 0 0 0 .707-1.707L20 15.586V10c0-4.411-3.589-8-8-8zm8 15H4v-1.414l1.707-1.707A1 1 0 0 0 6 14V10c0-3.309 2.691-6 6-6s6 2.691 6 6v4a1 1 0 0 0 .293.707L20 15.586V17zm-8 4a3.002 3.002 0 0 0 2.816-2H9.184A3.002 3.002 0 0 0 12 21z"
-              />
+            </a>
+          </li>
+        </ul>
+        <div class="md:hidden">
+          <button class="text-black focus:outline-none"
+            onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
-            <span>Notify Me</span>
           </button>
         </div>
       </div>
+      <div id="mobile-menu" class="hidden md:hidden text-lg">
+        <ul class="space-y-2 p-4 flex flex-col items-center">
+          <li><a class="animated-underline block" href="./">Home</a></li>
+          <li><a class="animated-underline block" href="./aboutUs.html">About</a></li>
+          <!-- Dropdown menu -->
+          <li class="relative">
+            <a class="animated-underline" href="#" id="mobile-work-menu">Work</a>
+            <ul id="mobile-work-dropdown"
+              class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg z-10">
+              <li>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html" id="films-link">Films</a>
+              </li>
+              <li>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
+                  id="photos-link">Photos</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="animated-underline block" href="./blog.html">Blog</a></li>
+          <li><a class="animated-underline block" href="./quote.html">Quote</a></li>
+          <li><a class="animated-underline block" href="./store.html">Store</a></li>
+          <li>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
+                <path fill="#0d0d0d"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.1z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative h-screen flex flex-col justify-center items-center text-center">
+    <div class="absolute inset-0"></div>
+    <div class="relative z-10 text-black">
+      <h1 class="text-6xl lg:text-8xl mb-4 animate-bounce">Store</h1>
+      <h2 class="text-3xl lg:text-4xl font-light">Coming Soon</h2>
+      <p class="text-xl mt-4">Be the first to know when we launch!</p>
+      <div class="mt-8">
+        <input type="email" id="email" name="email"
+          class="p-4 border border-gray-300 rounded-lg w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-brandBlue transition duration-300"
+          placeholder="Enter your email" />
+        <button class="bg-black text-white py-3 px-6 rounded-lg mt-4 flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-6 h-6">
+            <path
+              d="M12 2C7.589 2 4 5.589 4 10v5.586l-1.707 1.707A1 1 0 0 0 3 19h18a1 1 0 0 0 .707-1.707L20 15.586V10c0-4.411-3.589-8-8-8zm8 15H4v-1.414l1.707-1.707A1 1 0 0 0 6 14V10c0-3.309 2.691-6 6-6s6 2.691 6 6v4a1 1 0 0 0 .293.707L20 15.586V17zm-8 4a3.002 3.002 0 0 0 2.816-2H9.184A3.002 3.002 0 0 0 12 21z" />
+          </svg>
+          <span>Notify Me</span>
+        </button>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <script>
+    // Dropdown functionality
+    const workMenu = document.getElementById("work-menu");
+    const workDropdown = document.getElementById("work-dropdown");
+    const mobileWorkMenu = document.getElementById("mobile-work-menu");
+    const mobileWorkDropdown = document.getElementById("mobile-work-dropdown");
+
+    workMenu.addEventListener("click", function (event) {
+      event.preventDefault();
+      workDropdown.classList.toggle("hidden");
+    });
+
+    mobileWorkMenu.addEventListener("click", function (event) {
+      event.preventDefault();
+      mobileWorkDropdown.classList.toggle("hidden");
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function (event) {
+      const isClickInsideWork = workMenu.contains(event.target) || workDropdown.contains(event.target);
+      if (!isClickInsideWork) {
+        workDropdown.classList.add("hidden");
+      }
+
+      const isClickInsideMobileWork = mobileWorkMenu.contains(event.target) || mobileWorkDropdown.contains(event.target);
+      if (!isClickInsideMobileWork) {
+        mobileWorkDropdown.classList.add("hidden");
+      }
+    });
+
+    // Fade-out functionality
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetUrl = this.href;
+        document.body.classList.add('fade-out');
+        setTimeout(function () {
+          window.location.href = targetUrl;
+        }, 500); // Duration of fade-out
+      });
+    });
+  </script>
+</body>
+
 </html>

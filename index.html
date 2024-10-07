@@ -1,158 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"],
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+  <style>
+    .underline-active {
+      text-decoration: underline;
+    }
 
-  <body class="font-poppins">
-    <div class="relative w-full h-screen">
-      <!--header-->
-      <header>
-        <nav class="fixed w-full text-black">
-          <div
-            class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between"
-          >
-            <a
-              class="font-bold text-md h-12 md:h-8 lg:h-12 flex items-center"
-              href="#"
-            >
-              Parth Munish Kakkar
-            </a>
-            <ul
-              class="hidden md:flex space-x-3 md:space-x-3 lg:space-x-5 text-md"
-            >
-              <li>
-                <a class="animated-underline" href="./">Home</a>
-              </li>
-              <li>
-                <a class="animated-underline" href="./aboutUs.html">About</a>
-              </li>
-              <li>
-                <a class="animated-underline" href="./films.html">Films</a>
-              </li>
-              <li>
-                <a class="animated-underline" href="./images.html">Photos</a>
-              </li>
-              <li>
-                <a class="animated-underline" href="./travel.html">Travel</a>
-              </li>
-              <li>
-                <a class="animated-underline" href="./quote.html">Quote</a>
-              </li>
+    /* Added styles */
+    .dropdown {
+      position: absolute;
+      z-index: 10;
+      /* Set a high z-index for dropdowns */
+    }
 
-              <li>
-                <a class="animated-underline" href="./store.html">Store</a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      fill="#0d0d0d"
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="md:hidden">
-              <button
-                class="text-black focus:outline-none"
-                onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
-              >
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
+    /* Fade effect styles */
+    .fade {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body class="font-poppins fade">
+  <div class="relative w-full h-screen">
+    <!--header-->
+    <header>
+      <nav class="fixed w-full text-black">
+        <div class="container mx-auto px-3 xl:px-12 py-3 flex items-center justify-between">
+          <a class="font-bold text-md h-12 md:h-8 lg:h-12 flex items-center" href="#">
+            Parth Munish Kakkar
+          </a>
+          <ul class="hidden md:flex space-x-3 md:space-x-3 lg:space-x-5 text-md">
+            <li>
+              <a class="animated-underline" href="./">Home</a>
+            </li>
+            <li>
+              <a class="animated-underline" href="./aboutUs.html">About</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="relative">
+              <a class="animated-underline cursor-pointer" href="#" id="work-menu">Work</a>
+              <ul id="work-dropdown"
+                class="dropdown absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg">
+                <li>
+                  <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html"
+                    id="films-link">Films</a>
+                </li>
+                <li>
+                  <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
+                    id="photos-link">Photos</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="animated-underline" href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="animated-underline" href="./quote.html">Quote</a>
+            </li>
+            <li>
+              <a class="animated-underline" href="./store.html">Store</a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
+                  <path fill="#0d0d0d"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                 </svg>
-              </button>
-            </div>
+              </a>
+            </li>
+          </ul>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-black focus:outline-none"                onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')"
+            >
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
           </div>
-          <div id="mobile-menu" class="hidden md:hidden text-lg">
-            <ul class="space-y-2 p-4 flex flex-col items-center">
-              <li>
-                <a class="animated-underline block" href="./">Home</a>
-              </li>
-              <li>
-                <a class="animated-underline block" href="./aboutUs.html"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a class="animated-underline block" href="./films.html"
-                  >Films</a
-                >
-              </li>
-              <li>
-                <a class="animated-underline block" href="./images.html"
-                  >Photos</a
-                >
-              </li>
-              <li>
-                <a class="animated-underline block" href="./travel.html"
-                  >Travel</a
-                >
-              </li>
-              <li>
-                <a class="animated-underline block" href="./quote.html"
-                  >Quote</a
-                >
-              </li>
-              <li>
-                <a class="animated-underline block" href="./store.html"
-                  >Store</a
-                >
-              </li>
-              <li>
-                <a href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    class="w-5 h-5"
-                  >
-                    <path
-                      fill="#0d0d0d"
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden text-lg">
+          <ul class="space-y-2 p-4 flex flex-col items-center">
+            <li>
+              <a class="animated-underline block" href="./">Home</a>
+            </li>
+            <li>
+              <a class="animated-underline block" href="./aboutUs.html">About</a>
+            </li>
+            <!-- Dropdown menu for mobile -->
+            <li class="relative">
+              <a class="animated-underline cursor-pointer" href="#" id="mobile-work-menu">Work</a>
+              <ul id="mobile-work-dropdown"
+                class="dropdown absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg">
+                <li>
+                  <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html"
+                    id="films-link">Films</a>
+                </li>
+                <li>
+                  <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
+                    id="photos-link">Photos</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="animated-underline block" href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a class="animated-underline block" href="./quote.html">Quote</a>
+            </li>
+            <li>
+              <a class="animated-underline block" href="./store.html">Store</a>
+            </li>
+            <li>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-5 h-5">
+                  <path fill="#0d0d0d"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
       <!--section--->
       <section class="h-full w-full">
         <img
           class="hidden object-cover md:block w-full h-full"
-          src="./assets/front1.jpeg"
+          src="./assets/WEBSITE HOME SCREEN.JPG"
           alt="Background"
         />
         <img
@@ -164,14 +162,62 @@
           class="absolute z-10 top-[50%] right-[8%] md:right-[30%] md:top-[30%] px-4 md:px-0 font-heading"
         ></div>
       </section>
-    </div>
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
+  </div>
 
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+  <script>
+    // Function to handle dropdown visibility
+    document.getElementById('work-menu').addEventListener('click', function (event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('work-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+
+    document.getElementById('mobile-work-menu').addEventListener('click', function (event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('mobile-work-dropdown');
+      dropdown.classList.toggle('hidden');
+    });
+
+    // Function to handle menu toggle on mobile
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Function to handle page transition with fade effect
+    function fadeOutAndNavigate(link) {
+      const body = document.body;
+      body.classList.add('fade-out');
+      
+      // Wait for the fade-out effect to complete before navigating
+      setTimeout(() => {
+        window.location.href = link;
+      }, 500); // Match this timeout with your CSS transition duration
+    }
+
+    // Underline active link for mobile and desktop
+    const currentPath = window.location.pathname;
+    const filmsLink = document.getElementById("films-link");
+    const photosLink = document.getElementById("photos-link");
+
+    // Add event listeners to the links to handle navigation with fade effect
+    document.querySelectorAll('a.animated-underline').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior
+        fadeOutAndNavigate(link.href); // Navigate using the fade function
       });
-    </script>
-  </body>
+    });
+
+    // Set the initial fade class
+    document.body.classList.add('fade');
+
+    // Existing underline logic
+    if (currentPath.includes("films.html")) {
+      filmsLink.classList.add("underline-active");
+    } else if (currentPath.includes("images.html")) {
+      photosLink.classList.add("underline-active");
+    }
+  </script>
+</body>
+
 </html>
