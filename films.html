@@ -44,14 +44,6 @@
     .underline-active {
       text-decoration: underline;
     }
-    .fade {
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .fade-out {
-      opacity: 0;
-    }
   </style>
   <script>
     tailwind.config = {
@@ -66,7 +58,7 @@
   </script>
 </head>
 
-<body class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200 fade to-gray-300">
+<body class="font-poppins bg-gradient-to-r from-gray-100 via-gray-200  to-gray-300">
   <!--header-->
   <header>
     <nav class="w-full text-black">
@@ -330,26 +322,26 @@
     photosLink.classList.add("underline-active");
   }
   // Fade effect for page transitions
-  const links = document.querySelectorAll('a[href]');
-  const body = document.body;
+  // const links = document.querySelectorAll('a[href]');
+  // const body = document.body;
 
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      if (link.getAttribute('href') !== "#") {
-        e.preventDefault(); // Prevent default link behavior
-        body.classList.add('fade-out'); // Start fade-out effect
+  // links.forEach((link) => {
+  //   link.addEventListener('click', (e) => {
+  //     if (link.getAttribute('href') !== "#") {
+  //       e.preventDefault(); // Prevent default link behavior
+  //       body.classList.add('fade-out'); // Start fade-out effect
 
-        setTimeout(() => {
-          window.location = link.getAttribute('href'); // Navigate to the new page
-        }, 500); // Wait for the fade-out effect to finish
-      }
-    });
-  });
+  //       setTimeout(() => {
+  //         window.location = link.getAttribute('href'); // Navigate to the new page
+  //       }, 500); // Wait for the fade-out effect to finish
+  //     }
+  //   });
+  // });
 
   // Fade in effect on page load
-  window.addEventListener('load', () => {
-    body.classList.remove('fade-out');
-  });
+  // window.addEventListener('load', () => {
+  //   body.classList.remove('fade-out');
+  // });
 </script>
 
 </html>

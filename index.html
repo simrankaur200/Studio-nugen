@@ -31,18 +31,18 @@
     }
 
     /* Fade effect styles */
-    .fade {
+    /* .fade {
       opacity: 1;
       transition: opacity 0.5s ease-in-out;
     }
 
     .fade-out {
       opacity: 0;
-    }
+    } */
   </style>
 </head>
 
-<body class="font-poppins fade">
+<body class="font-poppins">
   <div class="relative w-full h-screen">
     <!--header-->
     <header>
@@ -150,7 +150,7 @@
       <section class="h-full w-full">
         <img
           class="hidden object-cover md:block w-full h-full"
-          src="./assets/WEBSITE HOME SCREEN.JPG"
+          src="./assets/homePage.jpg"
           alt="Background"
         />
         <img
@@ -185,15 +185,15 @@
     });
 
     // Function to handle page transition with fade effect
-    function fadeOutAndNavigate(link) {
-      const body = document.body;
-      body.classList.add('fade-out');
+    // function fadeOutAndNavigate(link) {
+    //   const body = document.body;
+    //   body.classList.add('fade-out');
       
-      // Wait for the fade-out effect to complete before navigating
-      setTimeout(() => {
-        window.location.href = link;
-      }, 500); // Match this timeout with your CSS transition duration
-    }
+    //   // Wait for the fade-out effect to complete before navigating
+    //   setTimeout(() => {
+    //     window.location.href = link;
+    //   }, 500); // Match this timeout with your CSS transition duration
+    // }
 
     // Underline active link for mobile and desktop
     const currentPath = window.location.pathname;
@@ -208,8 +208,8 @@
       });
     });
 
-    // Set the initial fade class
-    document.body.classList.add('fade');
+    // // Set the initial fade class
+    // document.body.classList.add('fade');
 
     // Existing underline logic
     if (currentPath.includes("films.html")) {

@@ -23,14 +23,14 @@
       text-decoration: underline;
     }
 
-    /* Fade animation */
+    /* Fade-in animation */
     .fade {
-      opacity: 1;
-      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
     }
 
-    .fade-out {
-      opacity: 0;
+    .fade-in {
+      opacity: 1;
     }
   </style>
 </head>
@@ -49,14 +49,12 @@
           <!-- Dropdown menu -->
           <li class="relative">
             <a class="animated-underline" href="#" id="work-menu">Work</a>
-            <ul id="work-dropdown"
-              class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg">
+            <ul id="work-dropdown" class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg">
               <li>
                 <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html" id="films-link">Films</a>
               </li>
               <li>
-                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
-                  id="photos-link">Photos</a>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html" id="photos-link">Photos</a>
               </li>
             </ul>
           </li>
@@ -73,10 +71,8 @@
           </li>
         </ul>
         <div class="md:hidden">
-          <button class="text-black focus:outline-none"
-            onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')">
-            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
+          <button class="text-black focus:outline-none" onclick="document.querySelector('#mobile-menu').classList.toggle('hidden')">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
@@ -89,14 +85,12 @@
           <!-- Dropdown menu -->
           <li class="relative">
             <a class="animated-underline" href="#" id="mobile-work-menu">Work</a>
-            <ul id="mobile-work-dropdown"
-              class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg z-10">
+            <ul id="mobile-work-dropdown" class="absolute left-0 hidden mt-2 bg-white border border-gray-200 rounded shadow-lg z-10">
               <li>
                 <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./films.html" id="films-link">Films</a>
               </li>
               <li>
-                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html"
-                  id="photos-link">Photos</a>
+                <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="./images.html" id="photos-link">Photos</a>
               </li>
             </ul>
           </li>
@@ -139,8 +133,8 @@
   </div>
 
   <script>
-    // Dropdown functionality
-    const workMenu = document.getElementById("work-menu");
+    window.addEventListener('DOMContentLoaded', () => {
+      const workMenu = document.getElementById("work-menu");
     const workDropdown = document.getElementById("work-dropdown");
     const mobileWorkMenu = document.getElementById("mobile-work-menu");
     const mobileWorkDropdown = document.getElementById("mobile-work-dropdown");
@@ -167,18 +161,7 @@
         mobileWorkDropdown.classList.add("hidden");
       }
     });
-
-    // Fade-out functionality
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-      link.addEventListener('click', function (event) {
-        event.preventDefault();
-        const targetUrl = this.href;
-        document.body.classList.add('fade-out');
-        setTimeout(function () {
-          window.location.href = targetUrl;
-        }, 500); // Duration of fade-out
-      });
+      document.body.classList.add('fade-in');
     });
   </script>
 </body>
